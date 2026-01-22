@@ -1,5 +1,7 @@
 # Sitescoop
 
+![Sitescoop](SiteFunnel.png)
+
 A small local service and CLI that fetches a web page, extracts readable text, and returns a trimmed result. This is designed to help agent workflows pull context on demand without requiring the content to be pasted into the prompt or stored in the workspace.
 
 ## Why this exists
