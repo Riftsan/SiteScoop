@@ -1,0 +1,23 @@
+{
+  "name": "sitescoop",
+  "version": "0.1.0",
+  "description": "Sitescoop: local fetch service and CLI for extracting readable text from web pages for agent workflows.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "fetch:service": "node scripts/fetchService.mjs",
+    "fetch:page": "node scripts/fetchPage.mjs"
+  },
+  "bin": {
+    "fetchpage": "scripts/fetchPage.mjs",
+    "fetchservice": "scripts/fetchService.mjs"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "jsdom": "^24.1.3",
+    "node-fetch": "^3.3.2"
+  }
+}

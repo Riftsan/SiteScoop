@@ -1,0 +1,44 @@
+{
+  "name": "sitescoop",
+  "description": "Sitescoop fetches readable text from public web pages via a local service.",
+  "version": "0.1.0",
+  "inputs": {
+    "url": "string",
+    "maxChars": "number (optional)",
+    "maxBytes": "number (optional)",
+    "timeoutMs": "number (optional)",
+    "allowFallbacks": "boolean (optional)",
+    "preferReadability": "boolean (optional)",
+    "userAgentMode": "string (optional, fixed|url)",
+    "userAgentFamily": "string (optional, desktop|mobile|tablet)",
+    "redirectLimit": "number (optional)",
+    "includeMeta": "boolean (optional)",
+    "chunkSize": "number (optional)",
+    "chunkOverlap": "number (optional)",
+    "maxChunks": "number (optional)"
+  },
+  "outputs": {
+    "text": "string",
+    "meta": "object (optional)",
+    "chunks": "array (optional)"
+  },
+  "endpoint": {
+    "method": "GET",
+    "path": "/fetch",
+    "query": {
+      "url": "string",
+      "maxChars": "number (optional)",
+      "maxBytes": "number (optional)",
+      "timeoutMs": "number (optional)",
+      "allowFallbacks": "boolean (optional)",
+      "preferReadability": "boolean (optional)",
+      "userAgentMode": "string (optional)",
+      "userAgentFamily": "string (optional)",
+      "redirectLimit": "number (optional)",
+      "includeMeta": "boolean (optional)",
+      "chunkSize": "number (optional)",
+      "chunkOverlap": "number (optional)",
+      "maxChunks": "number (optional)"
+    }
+  }
+}
